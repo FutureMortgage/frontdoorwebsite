@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Frontdoor Direct — dark, monochrome, cinematic
+   ============================================================ */
+
+:root {
+  --ink: #0a0a0a;
+  --paper: #ffffff;
+  --muted: #a1a1aa;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-departure), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  color: var(--paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Mono pill / label */
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* Slow ambient zoom on the hero backdrop */
+@keyframes slow-zoom {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+.hero-bg {
+  animation: slow-zoom 24s ease-in-out infinite alternate;
+}
+
+/* Fade-up entrance */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal {
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
