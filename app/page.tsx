@@ -18,15 +18,22 @@ export default function Home() {
 
       {/* Centered lockup */}
       <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <div className="reveal flex flex-col items-center gap-6 [text-shadow:0_2px_30px_rgba(0,0,0,0.55)] sm:flex-row sm:items-center sm:gap-5">
-          <h1 className="text-6xl font-semibold tracking-[-0.03em] text-white sm:text-7xl md:text-8xl">
+        <div className="reveal flex flex-col items-center gap-2 [text-shadow:0_2px_30px_rgba(0,0,0,0.55)] sm:flex-row sm:items-center sm:gap-2">
+          <h1 className="text-2xl font-semibold tracking-[-0.03em] text-white sm:text-2xl md:text-3xl">
             Frontdoor
           </h1>
-          <span className="mono inline-flex items-center rounded-full border border-white/45 px-5 py-2 text-sm uppercase tracking-[0.28em] text-white/90 backdrop-blur-sm sm:text-base">
+          <span className="mono inline-flex items-center rounded-full border border-white/45 px-2.5 py-1 text-[0.6rem] uppercase tracking-[0.28em] text-white/90 backdrop-blur-sm sm:text-xs">
             Direct
           </span>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="absolute inset-x-0 bottom-0 z-10 flex justify-center px-6 pb-8">
+        <p className="mono text-center text-[0.65rem] uppercase tracking-[0.28em] text-white/60 [text-shadow:0_1px_16px_rgba(0,0,0,0.7)]">
+          Frontdoor, a mortgage company built for consumers
+        </p>
+      </footer>
     </main>
   );
 }
