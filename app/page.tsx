@@ -20,7 +20,7 @@ export default function Home() {
       <section className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center">
         <div className="reveal flex flex-col items-center gap-2 [text-shadow:0_2px_30px_rgba(0,0,0,0.55)] sm:flex-row sm:items-center sm:gap-2">
           <h1 className="text-2xl font-semibold tracking-[-0.03em] text-white sm:text-2xl md:text-3xl">
-            Frontdoor
+            Frontd<span className="mono">oo</span>r
           </h1>
           <span className="mono inline-flex items-center rounded-full border border-white/45 px-2.5 py-1 text-[0.6rem] uppercase tracking-[0.28em] text-white/90 backdrop-blur-sm sm:text-xs">
             Direct
